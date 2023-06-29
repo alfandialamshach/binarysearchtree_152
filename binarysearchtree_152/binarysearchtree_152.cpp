@@ -42,7 +42,10 @@ public:
 		if (parent == NULL) // If the parent is NULL (TREE is empety)
 		{
 			ROOT = newNode;	//Mark the new node as ROOT
+			return; //Exxit
 		}
+
+		if (element < parent->info)	//if the value in the data field of the new node is less than of the parent
 	}
 
 };
